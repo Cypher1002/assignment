@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <body>
+        <button id="navigate-button">Navigate to Table</button>
+      
+        <div id="table-container" style="display: none;">
+          <table id="data-table">
+            <thead>
+              <tr>
+                <th>Heat Code</th>
+                <th>Grade</th>
+                <th>Mill Name</th>
+                <th>Diameter</th>
+                <th>Invoice No</th>
+                <th>Date</th>
+                <th>QR Code</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <button id="add-column-button">Add Column</button>
+          <div id="add-column-popup" class="popup">
+            <div class="popup-content">
+              <h2>Add Column</h2>
+              <input type="text" id="new-column-name" placeholder="Enter column name">
+              <button onclick="addColumn()">Add</button>
+              <button onclick="closePopup('add-column-popup')">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <script src="script.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</body>
+</html>
